@@ -1,4 +1,5 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';;
-use app\services\Test;
+use project\services\Test;
 $s = new Test();
+phpinfo();
