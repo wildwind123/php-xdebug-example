@@ -3,7 +3,7 @@ services:
   php:
     build: php
     volumes:
-      - ./html:/var/www/html
+      - ./project:/var/www/html
       - ./php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
     environment:
       - CONF_XDEBUG_CLIENT_IP=${CONF_XDEBUG_CLIENT_IP}
@@ -24,4 +24,4 @@ services:
       - "${CONF_NGINX_MAIN_PORT}:80"
     volumes:
       - ./nginx/templates:/etc/nginx/templates
-      - ./html:/var/www/html
+      - ./project:/var/www/html

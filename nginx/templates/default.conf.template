@@ -3,7 +3,7 @@ server {
     listen       80;
     listen  [::]:80;
     server_name  localhost;
-    root /var/www/html;
+    root /var/www/html/www;
 
     access_log  /var/log/nginx/host.access.log  main;
     error_log  /var/log/nginx/nginx_error.log  info;
